@@ -8,7 +8,7 @@ const brands = [
     icon: Newspaper,
     color: 'from-slate-600 to-slate-700',
     shadow: 'shadow-slate-500/20',
-    url: '#',
+    url: 'https://blackhowk.com',
   },
   {
     name: 'BloomDuke',
@@ -17,7 +17,7 @@ const brands = [
     icon: Sparkles,
     color: 'from-pink-600 to-rose-600',
     shadow: 'shadow-pink-500/20',
-    url: '#',
+    url: 'https://bloomduke.com',
   },
   {
     name: 'Bookish Duke',
@@ -26,7 +26,7 @@ const brands = [
     icon: BookOpen,
     color: 'from-amber-600 to-yellow-600',
     shadow: 'shadow-amber-500/20',
-    url: '#',
+    url: 'https://bookishduke.com',
   },
   {
     name: 'Black Robox',
@@ -35,7 +35,7 @@ const brands = [
     icon: Bot,
     color: 'from-blue-600 to-cyan-600',
     shadow: 'shadow-blue-500/20',
-    url: '#',
+    url: 'https://blackrobox.com',
   },
   {
     name: 'MittiPaoo',
@@ -44,7 +44,7 @@ const brands = [
     icon: Plane,
     color: 'from-emerald-600 to-teal-600',
     shadow: 'shadow-emerald-500/20',
-    url: '#',
+    url: 'https://mittipaoo.com',
   },
 ];
 
@@ -85,6 +85,8 @@ export default function Brands() {
 
               <a
                 href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 w-fit"
               >
                 Visit Website
@@ -96,7 +98,9 @@ export default function Brands() {
 
         <div className="flex justify-center">
           <a
-            href="#"
+            href="https://empiretecdigitalmedia.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/50 hover:scale-105"
           >
             Visit All Websites
