@@ -50,44 +50,48 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section id="brands" className="py-24 px-6 relative bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="brands" className="py-24 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-yellow-600/5 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Our <span className="text-blue-600">Media Brands</span>
+          <div className="text-5xl mb-4">📱</div>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400">Media Brands</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A diverse portfolio of digital publications connecting audiences worldwide
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            A diverse portfolio of digital publications connecting audiences worldwide 🌐
           </p>
-          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-yellow-500 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {brands.map((brand, index) => (
             <div
               key={brand.name}
-              className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg flex flex-col"
+              className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col"
               style={{
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
               }}
             >
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-16 h-16 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                <div className="w-16 h-16 rounded-xl bg-slate-700/50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
                   <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">{brand.name}</h3>
-                  <p className="text-blue-600 font-semibold text-sm leading-tight">{brand.tagline}</p>
+                  <h3 className="text-2xl font-bold text-white mb-1">{brand.name}</h3>
+                  <p className="text-blue-400 font-semibold text-sm leading-tight">{brand.tagline}</p>
                 </div>
               </div>
 
-              <p className="text-gray-700 mb-8 leading-relaxed flex-grow">{brand.description}</p>
+              <p className="text-slate-300 mb-8 leading-relaxed flex-grow">{brand.description}</p>
 
               <a
                 href={brand.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-md w-fit"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 w-fit"
               >
                 Visit Website
                 <ExternalLink className="w-4 h-4" />
@@ -101,9 +105,9 @@ export default function Brands() {
             href="https://empiretecdigitalmedia.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-md"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/30"
           >
-            Visit All Websites
+            🚀 Visit All Websites
             <ExternalLink className="w-5 h-5" />
           </a>
         </div>
